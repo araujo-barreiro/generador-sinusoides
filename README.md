@@ -6,7 +6,7 @@ Proyecto para la asignatura Circuitos Electrónicos Programables de Teleco. Se t
 
 <b>Hardware:</b><br>
 <ul>
-<li>Tabla LUT con 256 valores de 8 bits de una sinusoide entre 0 y 2π
+<li>Tabla LUT con 256 valores de 8 bits de una sinusoide entre 0 y 2π (valores sinusoide.txt)
 <li>Transmisión de la sinusoide a través de un SPI
 <li>Transmisión de los valores de amplitud y frecuencia a través de la UART
 </ul>
@@ -20,10 +20,14 @@ Proyecto para la asignatura Circuitos Electrónicos Programables de Teleco. Se t
 
 # Diagrama de bloques:
 
+<img src="https://github.com/araujo-barreiro/generador-sinusoides/raw/master/diagrama%20de%20bloques.jpeg" alt="Diagrama de bloques" height="200"/>
+
 # Secuencia de operaciones:
 
+<img src="https://github.com/araujo-barreiro/generador-sinusoides/raw/master/secuencia%20de%20operaciones.jpeg" alt="Secuencia de operaciones" height="200"/>
+
 # Desarrollo:
-Vivado 2015.3 + PicoblazeIDE
+Vivado 2015.3 + PicoblazeIDE<br>
 Diego Araújo Novoa y Guillermo Barreiro Fernández
 
 
