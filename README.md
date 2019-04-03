@@ -28,7 +28,8 @@ Proyecto para la asignatura Circuitos Electrónicos Programables de Teleco. Se t
 
 # Desarrollo:
 Vivado 2015.3 + PicoblazeIDE<br>
-Diego Araújo Novoa y Guillermo Barreiro Fernández
+<a href="https://github.com/diegoara96">Diego Araújo Novoa</a> y <a href="https://github.com/gbarreiro">Guillermo Barreiro Fernández</a>
+ 
 
 
 
