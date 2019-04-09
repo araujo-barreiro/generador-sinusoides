@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="testbench_sistema_entero_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="testbench_sistema_entero" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="28480000000001fs"></ZoomEndTime>
+      <Cursor1Time time="14995375000000fs"></Cursor1Time>
+   </zoom_setting>
+   <WVObjectSize size="30" />
+   <wvobject db_ref_id="1" fp_name="/testbench_sistema_entero/BTND" type="logic">
+      <obj_property name="ElementShortName">BTND</obj_property>
+      <obj_property name="ObjectShortName">BTND</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/testbench_sistema_entero/BTNL" type="logic">
+      <obj_property name="ElementShortName">BTNL</obj_property>
+      <obj_property name="ObjectShortName">BTNL</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/testbench_sistema_entero/BTNR" type="logic">
+      <obj_property name="ElementShortName">BTNR</obj_property>
+      <obj_property name="ObjectShortName">BTNR</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/testbench_sistema_entero/BTNU" type="logic">
+      <obj_property name="ElementShortName">BTNU</obj_property>
+      <obj_property name="ObjectShortName">BTNU</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/testbench_sistema_entero/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/testbench_sistema_entero/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/testbench_sistema_entero/busy" type="logic">
+      <obj_property name="ElementShortName">busy</obj_property>
+      <obj_property name="ObjectShortName">busy</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/testbench_sistema_entero/end_of_conv" type="logic">
+      <obj_property name="ElementShortName">end_of_conv</obj_property>
+      <obj_property name="ObjectShortName">end_of_conv</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/testbench_sistema_entero/sclk_both_dac" type="logic">
+      <obj_property name="ElementShortName">sclk_both_dac</obj_property>
+      <obj_property name="ObjectShortName">sclk_both_dac</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/testbench_sistema_entero/sdin_first_dac" type="logic">
+      <obj_property name="ElementShortName">sdin_first_dac</obj_property>
+      <obj_property name="ObjectShortName">sdin_first_dac</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/testbench_sistema_entero/sdin_second_dac" type="logic">
+      <obj_property name="ElementShortName">sdin_second_dac</obj_property>
+      <obj_property name="ObjectShortName">sdin_second_dac</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/testbench_sistema_entero/sync_both_dac" type="logic">
+      <obj_property name="ElementShortName">sync_both_dac</obj_property>
+      <obj_property name="ObjectShortName">sync_both_dac</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/testbench_sistema_entero/uart" type="logic">
+      <obj_property name="ElementShortName">uart</obj_property>
+      <obj_property name="ObjectShortName">uart</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/testbench_sistema_entero/sistema_entero_inst/sinusoide" type="array">
+      <obj_property name="ElementShortName">sinusoide[11:0]</obj_property>
+      <obj_property name="ObjectShortName">sinusoide[11:0]</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/testbench_sistema_entero/sistema_entero_inst/out_p2_q" type="array">
+      <obj_property name="ElementShortName">out_p2_q[7:0]</obj_property>
+      <obj_property name="ObjectShortName">out_p2_q[7:0]</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/testbench_sistema_entero/sistema_entero_inst/out_p4_q" type="array">
+      <obj_property name="ElementShortName">out_p4_q[7:0]</obj_property>
+      <obj_property name="ObjectShortName">out_p4_q[7:0]</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/testbench_sistema_entero/sistema_entero_inst/lut_value" type="array">
+      <obj_property name="ElementShortName">lut_value[7:0]</obj_property>
+      <obj_property name="ObjectShortName">lut_value[7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/testbench_sistema_entero/sistema_entero_inst/picoblaze3_empotrado_s7_inst/picoblaze3/sim_s4" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">sim_s4[7:0]</obj_property>
+      <obj_property name="ObjectShortName">sim_s4[7:0]</obj_property>
+      <obj_property name="label">mem1</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/testbench_sistema_entero/sistema_entero_inst/picoblaze3_empotrado_s7_inst/picoblaze3/sim_s5" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">sim_s5[7:0]</obj_property>
+      <obj_property name="ObjectShortName">sim_s5[7:0]</obj_property>
+      <obj_property name="label">mem2</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/testbench_sistema_entero/sistema_entero_inst/picoblaze3_empotrado_s7_inst/picoblaze3/sim_s6" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">sim_s6[7:0]</obj_property>
+      <obj_property name="ObjectShortName">sim_s6[7:0]</obj_property>
+      <obj_property name="label">amplitud[7:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/testbench_sistema_entero/sistema_entero_inst/picoblaze3_empotrado_s7_inst/picoblaze3/sim_s7" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">sim_s7[7:0]</obj_property>
+      <obj_property name="ObjectShortName">sim_s7[7:0]</obj_property>
+      <obj_property name="label">frecuencia[7:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/testbench_sistema_entero/sistema_entero_inst/picoblaze3_empotrado_s7_inst/picoblaze3/sim_kcpsm3_opcode" type="array">
+      <obj_property name="ElementShortName">sim_kcpsm3_opcode[1:19]</obj_property>
+      <obj_property name="ObjectShortName">sim_kcpsm3_opcode[1:19]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/testbench_sistema_entero/sistema_entero_inst/picoblaze3_empotrado_s7_inst/picoblaze3/sim_kcpsm3_status" type="array">
+      <obj_property name="ElementShortName">sim_kcpsm3_status[1:13]</obj_property>
+      <obj_property name="ObjectShortName">sim_kcpsm3_status[1:13]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/testbench_sistema_entero/sistema_entero_inst/picoblaze3_empotrado_s7_inst/picoblaze3/out_port" type="array">
+      <obj_property name="ElementShortName">out_port[7:0]</obj_property>
+      <obj_property name="ObjectShortName">out_port[7:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/testbench_sistema_entero/sistema_entero_inst/picoblaze3_empotrado_s7_inst/picoblaze3/port_id" type="array">
+      <obj_property name="ElementShortName">port_id[7:0]</obj_property>
+      <obj_property name="ObjectShortName">port_id[7:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/testbench_sistema_entero/sistema_entero_inst/picoblaze3_empotrado_s7_inst/picoblaze3/in_port" type="array">
+      <obj_property name="ElementShortName">in_port[7:0]</obj_property>
+      <obj_property name="ObjectShortName">in_port[7:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/testbench_sistema_entero/sistema_entero_inst/picoblaze3_empotrado_s7_inst/picoblaze3/sim_s1" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">sim_s1[7:0]</obj_property>
+      <obj_property name="ObjectShortName">sim_s1[7:0]</obj_property>
+      <obj_property name="label">pulsadores</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/testbench_sistema_entero/sistema_entero_inst/picoblaze3_empotrado_s7_inst/picoblaze3/sim_s8" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">sim_s8[7:0]</obj_property>
+      <obj_property name="ObjectShortName">sim_s8[7:0]</obj_property>
+      <obj_property name="label">ctr_frec</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/testbench_sistema_entero/sistema_entero_inst/transmisor_spi_inst/start_conv_both_dac" type="logic">
+      <obj_property name="ElementShortName">start_conv_both_dac</obj_property>
+      <obj_property name="ObjectShortName">start_conv_both_dac</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/testbench_sistema_entero/sistema_entero_inst/transmisor_spi_inst/data_in_first_dac" type="array">
+      <obj_property name="ElementShortName">data_in_first_dac[11:0]</obj_property>
+      <obj_property name="ObjectShortName">data_in_first_dac[11:0]</obj_property>
+   </wvobject>
+</wave_config>

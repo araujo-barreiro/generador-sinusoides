@@ -1,0 +1,6 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  "testbench_sistema_entero_func_synth.vhd"
+vhdl xil_defaultlib  "../../../../Practica7.srcs/sim_1/imports/new/testbench_sistema_entero.vhd"
+
+# Do not sort compile order
+nosort

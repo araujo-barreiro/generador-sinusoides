@@ -1,0 +1,5 @@
+Vivado Simulator 2015.3
+Time resolution is 1 ps
+Failure: Simulation stop
+Time: 24000200 ns  Iteration: 0  Process: /testbench_sistema_entero/stim_proc  File: C:/Users/guill/Desktop/Practica7.xpr/Practica7/Practica7.srcs/sim_1/imports/new/testbench_sistema_entero.vhd
+$finish called at time : 24000200 ns : File "C:/Users/guill/Desktop/Practica7.xpr/Practica7/Practica7.srcs/sim_1/imports/new/testbench_sistema_entero.vhd" Line 148

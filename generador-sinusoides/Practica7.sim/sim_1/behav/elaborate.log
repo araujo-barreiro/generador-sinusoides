@@ -1,0 +1,118 @@
+Vivado Simulator 2015.3
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.3/bin/unwrapped/win64.o/xelab.exe -wto fa7faa7ccd3746cd9cf44e0a4ba648f7 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbench_sistema_entero_behav xil_defaultlib.testbench_sistema_entero -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package unisim.vcomponents
+Compiling package std.textio
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package ieee.std_logic_signed
+Compiling package ieee.std_logic_textio
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3("11100100")(0,7)\]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4("1111111111001010")(0,15)\]
+Compiling architecture fdrse_v of entity unisim.FDRSE [\FDRSE('0','0','0','0','0','0')\]
+Compiling architecture ram32x1d_v of entity unisim.RAM32X1D [\RAM32X1D("000000000000000000000...]
+Compiling architecture ram16x1d_v of entity unisim.RAM16X1D [\RAM16X1D("0000000000000000",'0'...]
+Compiling architecture ram64x1s_v of entity unisim.RAM64X1S [\RAM64X1S("000000000000000000000...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4("0110111010001010")(0,15)\]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3("01101100")(0,7)\]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3("10010110")(0,7)\]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2("0010")(0,3)\]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3("11111110")(0,7)\]
+Compiling architecture ram32x1s_v of entity unisim.RAM32X1S [\RAM32X1S("000000000000000000000...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4("0110010101010101")(0,15)\]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4("1010100110011001")(0,15)\]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2("0001")(0,3)\]
+Compiling architecture fdre_v of entity unisim.FDRE [\FDRE('0','0','0','0')\]
+Compiling architecture fd_v of entity unisim.FD [\FD('0')\]
+Compiling architecture fdse_v of entity unisim.FDSE [\FDSE('1','0','0','0')\]
+Compiling architecture fds_v of entity unisim.FDS [\FDS('1')\]
+Compiling architecture fdr_v of entity unisim.FDR [\FDR('0')\]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4("0000000010000000")(0,15)\]
+Compiling architecture fde_v of entity unisim.FDE [\FDE('0')\]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4("1110101010101010")(0,15)\]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3("00000100")(0,7)\]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4("0111010000000000")(0,15)\]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4("0101101000111100")(0,15)\]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3("00101111")(0,7)\]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4("0001000000000000")(0,15)\]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4("0101010000000000")(0,15)\]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2("1101")(0,3)\]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4("0100000111111100")(0,15)\]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2("1000")(0,3)\]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4("0000000000000001")(0,15)\]
+Compiling architecture muxcy_v of entity unisim.MUXCY [muxcy_default]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3("00111111")(0,7)\]
+Compiling architecture xorcy_v of entity unisim.XORCY [xorcy_default]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4("0110100110010110")(0,15)\]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4("1111001111111111")(0,15)\]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3("11110011")(0,7)\]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2("1100")(0,3)\]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2("0011")(0,3)\]
+Compiling architecture inv_v of entity unisim.INV [inv_default]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4("0000000101000101")(0,15)\]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4("0000010000000000")(0,15)\]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4("1000000000000000")(0,15)\]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4("1111111111100010")(0,15)\]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3("11001010")(0,7)\]
+Compiling architecture muxf5_v of entity unisim.MUXF5 [muxf5_default]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3("00011111")(0,7)\]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4("0000000000000010")(0,15)\]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4("0000000000010000")(0,15)\]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4("0100000000000000")(0,15)\]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4("0000000100000000")(0,15)\]
+Compiling architecture low_level_definition of entity xil_defaultlib.kcpsm3 [kcpsm3_default]
+Compiling architecture rb18_internal_vhdl_v of entity unisim.RB18_INTERNAL_VHDL [\RB18_INTERNAL_VHDL(18,0,0,false...]
+Compiling architecture ramb18e1_v of entity unisim.RAMB18E1 [\RAMB18E1(0,0,"00000000000000000...]
+Compiling architecture low_level_definition of entity xil_defaultlib.picocode_s7 [picocode_s7_default]
+Compiling architecture rtl of entity xil_defaultlib.picoblaze3_empotrado_s7 [picoblaze3_empotrado_s7_default]
+Compiling architecture behavioral of entity xil_defaultlib.biestable_D_8_bits [biestable_d_8_bits_default]
+Compiling architecture dataflow of entity xil_defaultlib.bin_to_hex [bin_to_hex_default]
+Compiling architecture behavioral of entity xil_defaultlib.biestable_D_1_bit [biestable_d_1_bit_default]
+Compiling architecture portmap of entity xil_defaultlib.selec_16_salidas_con_reg_y_mem_esc_lect [selec_16_salidas_con_reg_y_mem_e...]
+Compiling architecture dataflow of entity xil_defaultlib.mux_16_entradas [mux_16_entradas_default]
+Compiling architecture dataflow of entity xil_defaultlib.mux_2_entradas [mux_2_entradas_default]
+Compiling architecture behavioral of entity xil_defaultlib.selec_16_entradas_con_reg_y_bypass [selec_16_entradas_con_reg_y_bypa...]
+Compiling architecture behavioral of entity xil_defaultlib.sin_lut [sin_lut_default]
+Compiling architecture behavioral of entity xil_defaultlib.registro_srl [registro_srl_default]
+Compiling architecture behavioral of entity xil_defaultlib.contador_8_bits [contador_8_bits_default]
+Compiling architecture behavioral of entity xil_defaultlib.medio_periodo [medio_periodo_default]
+Compiling architecture behavioral of entity xil_defaultlib.detector_flancos [detector_flancos_default]
+Compiling architecture behavioral of entity xil_defaultlib.unidad_operativa [unidad_operativa_default]
+Compiling architecture maquina_estados of entity xil_defaultlib.unidad_control [unidad_control_default]
+Compiling architecture behavioral of entity xil_defaultlib.transmisor_spi [transmisor_spi_default]
+Compiling architecture mult_and_v of entity unisim.MULT_AND [mult_and_default]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4("1110010011111111")(0,15)\]
+Compiling architecture muxf6_v of entity unisim.MUXF6 [muxf6_default]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2("1110")(0,3)\]
+Compiling architecture fdrs_v of entity unisim.FDRS [\FDRS('0','0','0','0','0')\]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3("00010000")(0,7)\]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4("0000000110010000")(0,15)\]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4("0001010101000000")(0,15)\]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3("10010100")(0,7)\]
+Compiling architecture srl16e_v of entity unisim.SRL16E [\SRL16E("0000000000000000",'0')(...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4("0000000110000000")(0,15)\]
+Compiling architecture low_level_definition of entity xil_defaultlib.kcuart_tx [kcuart_tx_default]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4("0110011000000110")(0,15)\]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4("1011111110100000")(0,15)\]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3("11000100")(0,7)\]
+Compiling architecture low_level_definition of entity xil_defaultlib.bbfifo_16x8 [bbfifo_16x8_default]
+Compiling architecture macro_level_definition of entity xil_defaultlib.uart_tx [uart_tx_default]
+Compiling architecture behavioral of entity xil_defaultlib.generador_baudios [generador_baudios_default]
+Compiling architecture behavioral of entity xil_defaultlib.FD8C3 [fd8c3_default]
+Compiling architecture behavioral of entity xil_defaultlib.Generador_CE_1KHz [generador_ce_1khz_default]
+Compiling architecture behavioral of entity xil_defaultlib.sistema_entero [sistema_entero_default]
+Compiling architecture behavior of entity xil_defaultlib.testbench_sistema_entero
+Waiting for 1 sub-compilation(s) to finish...
+Built simulation snapshot testbench_sistema_entero_behav
