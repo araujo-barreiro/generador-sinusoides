@@ -1,0 +1,118 @@
+; Plantilla basica para un programa del microcontrolador Picoblaze 3
+
+; Generación del fichero VHDL con el código para la memoria de programa
+             VHDL "ROM_blank_modificada_s7.vhd", "picocode_s7.vhd", "picocode_s7"
+
+; Definición de direcciones de puertos de entrada
+PULSADORES  DSIN $00 ; 0000(BTNR)=aumenta frecuencia (BTNU)=aumenta amplitud (BTND)=baja amplitud (BTNL)=baja frecuencia
+VALORES_LUT DSIN $01
+
+; Definición de direcciones de puertos de salida
+UAR        DSOUT $00 ;UART
+LUT        DSOUT $01 ;salida con las direcciones de la lut
+SPI1        DSOUT $02 ; conversor spi
+Start_conv DSOUT $03 ; orden de start conv
+SPI2        DSOUT $04 ; conversor spi
+; Definición de nombres para los registros que se utilizan
+registro                   EQU s0
+ESTADO_ACTUAL_PULSADORES   EQU s1
+ESTADO_ANTERIOR_PULSADORES EQU s2
+DIRECCION_MEMORIA          EQU s3 ; direccion de memoria par ala LUT
+DATO_MEMORIA1              EQU s4 ;dato de memoria recivido por la lut
+DATO_MEMORIA2			   EQU s5
+AMPLITUD                   EQU s6 ; amplitud de la sinusoide
+FRECUENCIA                 EQU s7 ; frecuencia de la onda
+START_CONV_aux				   EQU sA ; orden de enviar datos para el SPI
+aux_frec EQU s8
+aux_amp EQU s9
+; COMIENZO DEL PROGRAMA PRINCIPAL
+                    ORG       $0                   ; El programa comienza en la posicion 0.
+
+inicio:             
+
+					LOAD      registro, $00		   ; inicializa el registro
+					OUT		  registro, LUT	   ; pongo a 0 las salidas
+					OUT		  registro, SPI1
+					OUT		  registro, SPI2
+					OUT		  registro, Start_conv
+			        LOAD      AMPLITUD, $00	
+			        LOAD 	  FRECUENCIA, 128
+
+datos:				;lectura de pulsadores	
+						
+                    load ESTADO_ANTERIOR_PULSADORES,ESTADO_ACTUAL_PULSADORES
+                    IN ESTADO_ACTUAL_PULSADORES,PULSADORES
+                    COMP ESTADO_ACTUAL_PULSADORES,ESTADO_ANTERIOR_PULSADORES
+                    jump Z, Sacar_dato
+                    
+             		test ESTADO_ACTUAL_PULSADORES, $01 ;comprobamos el btnl
+             		jump Z, btnd
+                    comp FRECUENCIA , 248
+                    jump Z,btnd
+	                ADD FRECUENCIA, 40 ; al aumentar el registro de frecuencia aumentamos el tiempo entre muestras = bajar frecuencia
+	                ; saca la amplitud y la frecuencia por la UART
+	                OUT AMPLITUD, UAR;
+	                OUT FRECUENCIA, UAR
+	               
+btnd:
+	 				test ESTADO_ACTUAL_PULSADORES, $02 ;comprobamos el btnd
+             		jump Z, btnu
+	                comp AMPLITUD  , $00
+	                jump Z,btnu
+	                SUB AMPLITUD , $01
+	                ; saca la amplitud y la frecuencia por la UART
+	                OUT AMPLITUD, UAR;
+	                OUT FRECUENCIA, UAR
+
+btnu:	
+					test ESTADO_ACTUAL_PULSADORES, $04 ;comprobamos el btnu
+             		jump Z, btnr
+	                comp AMPLITUD  , $04
+	                jump Z,btnr
+	                ADD AMPLITUD , $01
+					; saca la amplitud y la frecuencia por la UART
+	                OUT AMPLITUD, UAR;
+	                OUT FRECUENCIA, UAR
+
+btnr:	
+					test ESTADO_ACTUAL_PULSADORES, $08 ;comprobamos el btnl
+             		jump Z, Sacar_dato
+	                comp FRECUENCIA , 8 ;como minimo la frecuencia va a ser AA (128)
+	                jump Z,Sacar_dato
+	                SUB FRECUENCIA, 40 ; al disminuir el registro de frecuencia bajamos el tiempo entre muestras = aumentar frecuencia
+	                ; saca la amplitud y la frecuencia por la UART
+	                OUT AMPLITUD, UAR;
+	                OUT FRECUENCIA, UAR
+
+	                
+	                
+Sacar_dato:          IN DATO_MEMORIA1 ,VALORES_LUT
+					 LOAD DATO_MEMORIA2, $00 ;CUIDADO AL QUITAR ESTO EL PROGRAMA PETA
+					 call espera ;funcion destinada a hacernos perder tiempo entre datos = baja la frecuencia
+                     ADD DIRECCION_MEMORIA, $01
+                     ;desplazo tantas veces como amplitud tenga
+                     load aux_amp, AMPLITUD
+dato:                COMP aux_amp, $00
+                     jump Z, sigue
+                     SL0 DATO_MEMORIA1
+                     SLA DATO_MEMORIA2
+                     sub aux_amp, $01
+                     jump dato
+                     
+ sigue:              out DATO_MEMORIA1,SPI1
+ 					 out DATO_MEMORIA2,SPI2
+ 					 load START_CONV_aux, $01
+ 					 out  START_CONV_aux, Start_conv
+                     out DIRECCION_MEMORIA, LUT
+                     LOAD  START_CONV_aux, $00
+                     out  START_CONV_aux, Start_conv
+	                 jump datos
+
+
+espera:
+                load aux_frec, FRECUENCIA
+bucle:			comp aux_frec , $00
+ 				ret z
+ 				sub aux_frec, $01
+ 				jump bucle
+ 				
